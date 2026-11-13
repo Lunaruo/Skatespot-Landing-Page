@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173b31">
+  <meta name="description" content="SkateSpot : une application mobile pour explorer les spots de skate, ajouter ses découvertes et partager avec la communauté.">
+  <meta property="og:title" content="SkateSpot — La ville est ton terrain de jeu">
+  <meta property="og:description" content="Trouve un spot. Partage ton expérience. Rejoins la communauté.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/cover-skatespot.png">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>SkateSpot — Trouve ton prochain spot</title>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header" id="haut">
+    <div class="container nav-wrap">
+      <a class="brand" href="#haut" aria-label="SkateSpot — accueil">
+        <span class="brand-symbol" aria-hidden="true">
+          <svg viewBox="0 0 42 42" fill="none"><path d="M21 2c-9.5 0-17 7.4-17 16.8 0 11.3 17 21.2 17 21.2s17-9.9 17-21.2C38 9.4 30.5 2 21 2Z" fill="currentColor"/><circle cx="21" cy="18.5" r="7" fill="#F7F3E9"/><path d="M16.1 20.1h9.8M18.4 23.1h5.2" stroke="#173B31" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </span>
+        <span>skate<span class="brand-accent">spot</span><span class="brand-dot">.</span></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-controls="main-navigation" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="main-navigation" aria-label="Navigation principale">
+        <a href="#fonctionnalites">Fonctionnalités</a>
+        <a href="#experience">L'expérience</a>
+        <a href="#histoire">Le projet</a>
+        <a href="#technologies">Technologies</a>
+        <a class="nav-github" href="https://github.com/Lunaruo/skatespot" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-image" role="img" aria-label="Skatepark en extérieur au soleil avec un skateboard posé sur le sol"></div>
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <span class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> L'application des skateurs, par un skateur</span>
+          <p class="hero-kicker">EXPLORE · RIDE · SHARE</p>
+          <h1 id="hero-title">SkateSpot<span class="title-period">.</span></h1>
+          <p class="hero-line">La ville est ton <em>terrain de jeu.</em></p>
+          <p class="hero-description">Découvre de nouveaux spots, partage tes trouvailles et retrouve la communauté skate autour de toi. Le prochain spot n'est jamais très loin.</p>
+          <div class="hero-actions">
+            <a class="button button-lime" href="#fonctionnalites">Découvrir SkateSpot <span aria-hidden="true">↗</span></a>
+            <a class="button button-outline" href="https://github.com/Lunaruo/skatespot" target="_blank" rel="noopener noreferrer">Voir le projet sur GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="hero-side-note" aria-hidden="true">
+          <span class="side-note-line"></span>
+          BUILT FOR THE STREETS<br>MADE FOR THE COMMUNITY
+        </div>
+      </div>
+      <a class="scroll-hint" href="#fonctionnalites"><span class="scroll-line"></span> DÉFILER POUR EXPLORER</a>
+    </section>
+
+    <div class="mini-marquee" aria-hidden="true"><div class="container mini-marquee-inner"><span>FIND YOUR LINE</span><span>✳</span><span>DISCOVER NEW SPOTS</span><span>✳</span><span>SKATE TOGETHER</span><span>✳</span><span>SHARE THE STOKE</span></div></div>
+
+    <section class="section section-features" id="fonctionnalites" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <div><p class="section-label">01 / FONCTIONNALITÉS</p><h2 id="features-title">Tout le skate.<br><span class="serif-italic">Au même endroit.</span></h2></div>
+          <p class="section-intro">SkateSpot rend la découverte et le partage de spots plus simples, pour se concentrer sur l'essentiel : rider.</p>
+        </div>
+        <div class="features-grid">
+          <article class="feature-card reveal">
+            <div class="feature-media"><img src="assets/feature-map.svg" alt="Illustration d’une carte avec des marqueurs pour trouver des spots de skate" loading="lazy" width="760" height="460"></div>
+            <div class="feature-num">01</div>
+            <h3>Explore les spots</h3>
+            <p>Une carte interactive pour découvrir les spots de skate autour de toi, rechercher une adresse et préparer ta prochaine session.</p>
+            <span class="feature-tag">CARTE INTERACTIVE</span>
+          </article>
+          <article class="feature-card feature-card-green reveal">
+            <div class="feature-media"><img src="assets/feature-create.svg" alt="Illustration du formulaire de création d’un nouveau spot avec sa position géographique" loading="lazy" width="760" height="460"></div>
+            <div class="feature-num">02</div>
+            <h3>Ajoute tes découvertes</h3>
+            <p>Un spot qui manque sur la carte ? Ajoute-le et indique ses coordonnées pour permettre à d'autres skateurs de le trouver.</p>
+            <span class="feature-tag">SPOTS COMMUNAUTAIRES</span>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-media"><img src="assets/feature-community.svg" alt="Illustration du partage de photos et de commentaires entre skateurs" loading="lazy" width="760" height="460"></div>
+            <div class="feature-num">03</div>
+            <h3>Fais vivre la communauté</h3>
+            <p>Partage des photos et des commentaires sur les spots pour enrichir les informations accessibles aux autres riders.</p>
+            <span class="feature-tag">PHOTOS & COMMENTAIRES</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="experience" aria-labelledby="experience-title">
+      <div class="container experience-grid">
+        <div class="experience-copy reveal">
+          <p class="section-label">02 / L'EXPÉRIENCE</p>
+          <h2 id="experience-title">Ton quartier.<br><span class="serif-italic">Tes spots.</span></h2>
+          <p>SkateSpot réunit les spots issus de RideMyPark et ceux ajoutés par les utilisateurs sur une même carte. Une façon simple d'explorer ce qui t'entoure et de découvrir des endroits que tu ne connaissais pas.</p>
+          <div class="experience-points"><p><span class="check-mark">✓</span> Recherche par nom de spot</p><p><span class="check-mark">✓</span> Géolocalisation et carte OpenStreetMap</p><p><span class="check-mark">✓</span> Fiches détaillées et contenu communautaire</p></div>
+          <a href="https://github.com/Lunaruo/skatespot" class="text-link" target="_blank" rel="noopener noreferrer">Explorer le code source <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="experience-visual reveal">
+          <div class="map-mockup" role="img" aria-label="Illustration stylisée de la carte des spots dans SkateSpot, ce n'est pas une capture d'écran de l'application">
+            <div class="mockup-topbar"><span class="mockup-logo">skate<span>spot</span>.</span><span class="mockup-user">S</span></div>
+            <div class="mockup-search"><span aria-hidden="true">⌕</span> Rechercher un spot... <span class="search-filter">⌘</span></div>
+            <div class="mock-map">
+              <svg viewBox="0 0 520 380" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="520" height="380" fill="#e7e7d3"/><path d="M0 75c125 20 190-70 270-19s150 40 250-4M-40 270c120-35 170 36 275-20S360 180 560 228M105-30 155 430M330-10 385 420" stroke="#f8f4e7" stroke-width="45" fill="none"/><path d="M-50 170 570 112M-15 340 540 310M245-10 205 430M450-10 450 410" stroke="#fffdf3" stroke-width="19" fill="none"/><path d="M0 75c125 20 190-70 270-19s150 40 250-4M-40 270c120-35 170 36 275-20S360 180 560 228M105-30 155 430M330-10 385 420" stroke="#d7d5c3" stroke-width="1.5" fill="none"/><path d="M12 0h60v60H12zM275 130h95v55h-95zM0 286h85v100H0zM440 300h70v80h-70z" fill="#c7d6b7" opacity=".85"/></svg>
+              <div class="map-pin pin-one"><span>●</span></div><div class="map-pin pin-two"><span>●</span></div><div class="map-pin pin-three"><span>●</span></div><div class="map-pin pin-four alternate-pin"><span>●</span></div>
+              <div class="map-spot-card"><span class="map-card-badge">SPOT TROUVÉ</span><strong>Skatepark local</strong><small>Découvre les spots autour de toi</small></div>
+              <div class="map-location">◎</div>
+            </div>
+            <div class="mockup-caption">APERÇU ILLUSTRATIF · INTERFACE NON CONTRACTUELLE</div>
+          </div>
+          <div class="floating-sticker" aria-hidden="true"><span>GO</span><span>RIDE!</span><span class="sticker-small">✳ SKATESPOT</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section story-section" id="histoire" aria-labelledby="story-title">
+      <div class="container story-grid">
+        <div class="story-intro reveal"><p class="section-label section-label-light">03 / ABOUT · DERRIÈRE LE PROJET</p><h2 id="story-title">Un projet né<br><span class="serif-italic">sur un skate.</span></h2><div class="story-decoration" aria-hidden="true">✳</div></div>
+        <div class="story-content reveal">
+          <p class="story-lead">« Je voulais retrouver cette liberté de découvrir un nouveau spot, sans perdre du temps à le chercher. »</p>
+          <p>Le skate m'accompagne depuis des années. En France comme au Canada, j'ai découvert à quel point chaque ville a ses lieux, ses habitudes et ses rencontres. Pourtant, quand on arrive dans un nouveau quartier, savoir où rider n'est pas toujours évident.</p>
+          <p>En 2026, pendant ma formation de développeur full-stack, j'ai imaginé SkateSpot : une carte communautaire où l'on peut repérer un spot, en ajouter un et partager des photos ou des commentaires. J'ai réalisé seul ce <a class="story-inline-link" href="https://www.holbertonschool.fr/" target="_blank" rel="noopener noreferrer">Portfolio Project pour Holberton School</a>, de la première idée au MVP mobile.</p>
+          <div class="signature"><span class="signature-avatar" aria-hidden="true">LL</span><span><strong>Léo Lebtahi</strong><small>Créateur & développeur full-stack de SkateSpot</small></span></div>
+          <div class="about-links" aria-label="Liens du développeur et du projet">
+            <a href="https://github.com/Lunaruo" target="_blank" rel="noopener noreferrer">GitHub personnel ↗</a>
+            <a href="https://github.com/Lunaruo/skatespot" target="_blank" rel="noopener noreferrer">Dépôt SkateSpot ↗</a>
+            <!-- Ajoute tes URL de profil dans script.js pour activer ces deux liens. -->
+            <a class="profile-link pending" data-profile="linkedin" aria-disabled="true">LinkedIn · URL à compléter</a>
+            <a class="profile-link pending" data-profile="twitter" aria-disabled="true">X / Twitter · URL à compléter</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tech-section" id="technologies" aria-labelledby="tech-title">
+      <div class="container">
+        <div class="section-header reveal"><div><p class="section-label">04 / SOUS LE CAPOT</p><h2 id="tech-title">Une application.<br><span class="serif-italic">Plusieurs briques.</span></h2></div><p class="section-intro">Une architecture mobile et API conçue pour faire évoluer les fonctionnalités et les contenus.</p></div>
+        <div class="tech-list reveal">
+          <div><span class="tech-category">APPLICATION MOBILE</span><strong>Flutter · Dart</strong></div>
+          <div><span class="tech-category">API REST</span><strong>Node.js · Express</strong></div>
+          <div><span class="tech-category">BASE DE DONNÉES</span><strong>PostgreSQL · Prisma</strong></div>
+          <div><span class="tech-category">CARTE & DONNÉES</span><strong>OpenStreetMap · RideMyPark</strong></div>
+          <div><span class="tech-category">MÉDIAS</span><strong>Cloudinary · Sharp</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" id="acces" aria-labelledby="cta-title">
+      <div class="container final-cta-grid">
+        <div><p class="section-label section-label-light">PRÊT POUR UNE SESSION ?</p><h2 id="cta-title">Le prochain spot<br>n'attend que <em>toi.</em></h2><p>Retrouve le projet, son code source et son évolution sur GitHub.</p></div>
+        <div class="final-buttons"><a class="button button-lime button-large" href="https://github.com/Lunaruo/skatespot" id="project-cta" target="_blank" rel="noopener noreferrer">Voir le projet sur GitHub <span aria-hidden="true">↗</span></a><p class="deployment-note" id="deployment-note">L'application mobile n'est pas encore disponible via un lien public confirmé.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-wrap"><a class="footer-logo" href="#haut">skatespot<span>.</span></a><span>Fait avec passion pour le skate et le code.</span><span>© <span id="year">2026</span> SkateSpot</span></div></footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
